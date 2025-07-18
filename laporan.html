@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laporan AGRIGROTECH</title>
+    <link rel="icon" href="img/AGRIGROTECH.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body class="bg-white text-gray-800 font-[Inter]">
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 fixed w-full z-50">
+      <nav class="container mx-auto flex justify-between items-center">
+        <a href="index.html">
+          <img
+            src="img/Logo.png"
+            alt="AGRIGROTECH Logo"
+            class="h-10 w-auto rounded-md"
+          />
+        </a>
+        <ul class="hidden md:flex space-x-8 text-agrigreen-dark font-medium">
+          <li>
+            <a href="index.html" class="hover:text-agriblue-accent transition"
+              >Profil</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#tata-kelola"
+              class="hover:text-agriblue-accent transition"
+              >Tata Kelola</a
+            >
+          </li>
+          <li>
+            <a href="laporan.html" class="text-agriblue-accent font-semibold"
+              >Laporan</a
+            >
+          </li>
+          <li>
+            <a href="karir.html" class="hover:text-agriblue-accent transition"
+              >Karir</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#rilis-media"
+              class="hover:text-agriblue-accent transition"
+              >Artikel</a
+            >
+          </li>
+          <li>
+            <a href="kontak.html" class="hover:text-agriblue-accent transition"
+              >Kontak</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Laporan -->
+    <section class="pt-32 pb-16 bg-agriblue-light">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-agrigreen-dark mb-4">
+          Laporan Kinerja & Keberlanjutan
+        </h1>
+        <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+          Transparansi dan akuntabilitas adalah fondasi dari AGRIGROTECH. Di
+          sini Anda dapat melihat laporan resmi dan data perkembangan kami.
+        </p>
+      </div>
+    </section>
+
+    <!-- Isi Laporan -->
+    <section class="py-16">
+      <div class="container mx-auto px-6 md:px-12">
+        <h2 class="text-2xl font-semibold text-agrigreen-dark mb-6">
+          Laporan Terbaru
+        </h2>
+        <ul class="space-y-4">
+          <li class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+            <a href="#" class="text-agriblue-accent font-semibold"
+              >Laporan Keuangan 2024 - Q1</a
+            >
+            <p class="text-sm text-gray-600">Dipublikasikan: 12 April 2024</p>
+          </li>
+          <li class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+            <a href="#" class="text-agriblue-accent font-semibold"
+              >Laporan Dampak Sosial AGRIGROTECH 2023</a
+            >
+            <p class="text-sm text-gray-600">Dipublikasikan: 20 Januari 2024</p>
+          </li>
+          <li class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+            <a href="#" class="text-agriblue-accent font-semibold"
+              >Laporan Tahunan AGRIGROTECH 2023</a
+            >
+            <p class="text-sm text-gray-600">
+              Dipublikasikan: 31 Desember 2023
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Form Pelaporan dari Pengguna -->
+    <section class="py-16 bg-gradient-to-b from-[#DFF5E1] to-white">
+      <div class="container mx-auto px-6 md:px-12 max-w-2xl">
+        <h2 class="text-2xl font-semibold text-agrigreen-dark mb-6 text-center">
+          Laporkan Masukan Anda
+        </h2>
+        <p class="text-gray-700 text-center mb-8">
+          Kami membuka diri terhadap masukan pelanggan mengenai produk,
+          pelayanan, atau pengalaman Anda dengan AGRIGROTECH.
+        </p>
+        <form class="bg-white p-6 rounded-lg shadow space-y-4">
+          <input
+            type="text"
+            placeholder="Nama Anda"
+            class="w-full border border-gray-300 rounded px-4 py-2"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email Aktif"
+            class="w-full border border-gray-300 rounded px-4 py-2"
+            required
+          />
+          <select
+            class="w-full border border-gray-300 rounded px-4 py-2"
+            required
+          >
+            <option value="">Pilih Jenis Laporan</option>
+            <option value="produk">Masalah Produk</option>
+            <option value="pelayanan">Pelayanan Pelanggan</option>
+            <option value="saran">Saran dan Masukan</option>
+          </select>
+          <textarea
+            placeholder="Tuliskan laporan atau saran Anda..."
+            class="w-full border border-gray-300 rounded px-4 py-2 h-32"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-agrigreen-dark text-white px-6 py-2 rounded hover:bg-opacity-90 transition"
+          >
+            Kirim Laporan
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Tombol Kembali ke Beranda -->
+    <div class="text-center mb-20">
+      <a
+        href="index.html"
+        class="inline-flex items-center bg-agrigreen-dark text-white px-6 py-3 rounded-full shadow hover:bg-opacity-90 transition"
+      >
+        <i class="fas fa-arrow-left mr-2"></i> Kembali ke Beranda
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-agrigreen-dark text-white py-10 text-center text-sm">
+      <p class="mb-2">
+        © 2025 PT. AGRIGROTECH – Inovasi Digital untuk Pertanian Berkelanjutan.
+      </p>
+      <p>Hubungi kami untuk informasi lebih lanjut atau kemitraan strategis.</p>
+    </footer>
+    <!-- Chatbot Bubble -->
+    <div
+      id="chatbot-icon"
+      class="fixed bottom-6 right-6 z-50 bg-agrigreen-dark text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg cursor-pointer"
+    >
+      💬
+    </div>
+
+    <!-- Chatbot Window -->
+    <!-- Chatbot UI -->
+    <div id="chatbot-container" class="fixed bottom-6 right-6 z-50">
+      <div
+        id="chatbot-toggle"
+        class="bg-agrigreen-dark text-white w-14 h-14 flex items-center justify-center rounded-full shadow cursor-pointer"
+      >
+        💬
+      </div>
+      <div
+        id="chatbot-box"
+        class="hidden mt-2 w-80 bg-white border border-gray-300 rounded-lg shadow-lg flex flex-col"
+      >
+        <div
+          class="bg-agrigreen-dark text-white p-3 rounded-t-lg flex justify-between items-center"
+        >
+          <span>AGRIGROTECH Assistant</span>
+          <button id="chatbot-close" class="text-white text-lg">&times;</button>
+        </div>
+        <div
+          id="chatbot-messages"
+          class="p-3 h-64 overflow-y-auto text-sm space-y-2 text-gray-800 bg-gray-50"
+        ></div>
+        <div class="p-2 border-t">
+          <input
+            id="chatbot-input"
+            type="text"
+            placeholder="Tanya tentang AGRIGROTECH..."
+            class="w-full border px-3 py-2 rounded text-sm"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

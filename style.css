@@ -1,0 +1,41 @@
+/* Menggunakan font Inter secara global */
+body {
+  font-family: "Inter", sans-serif;
+}
+/* Custom colors for AGRIGROTECH */
+.bg-agrigreen-dark {
+  background-color: #1a472a;
+} /* Hijau tua dari logo */
+.text-agrigreen-dark {
+  color: #1a472a;
+}
+.bg-agriblue-light {
+  background-color: #e0f2f7;
+} /* Mirip dengan latar belakang biru muda di contoh */
+.text-agriblue-accent {
+  color: #00bcd4;
+} /* Warna aksen biru */
+.border-agriblue-accent {
+  border-color: #00bcd4;
+}
+.draggable {
+  touch-action: none;
+}
+#chatbot-window input:focus {
+  outline: none;
+  border-color: #1a472a;
+}
+#chatbot-box {
+  animation: fadeInUp 0.3s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

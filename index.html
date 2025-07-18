@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AGRIGROTECH - Teknologi untuk Pertanian Berkelanjutan</title>
+    <link rel="icon" href="img/AGRIGROTECH.png" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Inter dari Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome untuk ikon sosial media -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Header Section -->
+    <!-- Navbar awalnya transparan, akan berubah saat di-scroll -->
+    <header
+      id="main-header"
+      class="bg-transparent shadow-none py-4 px-6 md:px-12 fixed w-full z-50 transition-all duration-300 ease-in-out"
+    >
+      <nav class="container mx-auto flex justify-between items-center">
+        <!-- Logo AGRIGROTECH -->
+        <div class="flex items-center">
+          <img
+            src="img/Logo.png"
+            alt="AGRIGROTECH Logo"
+            class="h-10 w-auto rounded-md"
+          />
+        </div>
+
+        <!-- Navigasi Desktop -->
+        <ul class="hidden md:flex space-x-8 text-agrigreen-dark font-medium">
+          <li>
+            <a
+              href="#profil"
+              class="hover:text-agriblue-accent transition duration-300"
+              >Profil</a
+            >
+          </li>
+          <li>
+            <a
+              href="#tata-kelola"
+              class="hover:text-agriblue-accent transition duration-300"
+              >Tata Kelola</a
+            >
+          </li>
+          <li>
+            <a
+              href="laporan.html"
+              class="hover:text-agriblue-accent transition duration-300"
+              >Laporan</a
+            >
+          </li>
+          <li>
+            <a
+              href="karir.html"
+              class="hover:text-agriblue-accent transition duration-300"
+              >Karir</a
+            >
+          </li>
+          <li>
+            <a
+              href="#rilis-media"
+              class="hover:text-agriblue-accent transition duration-300"
+              >Artikel</a
+            >
+          </li>
+          <li>
+            <a
+              href="kontak.html"
+              class="hover:text-agriblue-accent transition duration-300"
+              >Kontak</a
+            >
+          </li>
+        </ul>
+
+        <!-- Tombol Menu Mobile (Hamburger) -->
+        <div class="md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="text-agrigreen-dark focus:outline-none"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Menu Mobile (Tersembunyi secara default) -->
+      <div id="mobile-menu" class="hidden md:hidden mt-4">
+        <ul class="flex flex-col space-y-2 text-agrigreen-dark font-medium">
+          <li>
+            <a
+              href="#profil"
+              class="block py-2 px-4 hover:bg-gray-100 rounded-md"
+              >Profil</a
+            >
+          </li>
+          <li>
+            <a
+              href="#tata-kelola"
+              class="block py-2 px-4 hover:bg-gray-100 rounded-md"
+              >Tata Kelola</a
+            >
+          </li>
+          <li>
+            <a
+              href="#laporan"
+              class="block py-2 px-4 hover:bg-gray-100 rounded-md"
+              >Laporan</a
+            >
+          </li>
+          <li>
+            <a
+              href="#karir"
+              class="block py-2 px-4 hover:bg-gray-100 rounded-md"
+              >Karir</a
+            >
+          </li>
+          <li>
+            <a
+              href="#rilis-media"
+              class="block py-2 px-4 hover:bg-gray-100 rounded-md"
+              >Artikel</a
+            >
+          </li>
+          <li>
+            <a
+              href="#kontak"
+              class="block py-2 px-4 hover:bg-gray-100 rounded-md"
+              >Kontak</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Tambahkan ID untuk referensi JavaScript -->
+    <section id="hero-section" class="bg-[#FFFFF] t-24 pb-16 md:pt-32 md:pb-24">
+      <div
+        class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between"
+      >
+        <!-- Konten Teks Hero -->
+        <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+          <h1
+            class="text-4xl md:text-6xl font-bold text-agrigreen-dark leading-tight mb-4"
+          >
+            Pertanian Cerdas, Panen Berlimpah
+          </h1>
+          <p class="text-lg md:text-xl text-gray-700 mb-8">
+            AGRIGROTECH hadir menjembatani kesenjangan teknologi di sektor
+            pertanian dengan menyediakan solusi yang mudah digunakan,
+            terjangkau, dan relevan dengan kondisi petani Indonesia.
+          </p>
+          <a
+            href="#profil"
+            class="inline-block bg-[#1a472a] text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-90 transition duration-300"
+          >
+            Pelajari Lebih Lanjut
+          </a>
+          <a
+            href="#demo"
+            class="bg-white text-[#1a472a] font-semibold py-3 px-8 rounded-full border border-[#1a472a] hover:bg-[#1a472a] hover:text-white transition duration-300"
+          >
+            Coba Sekarang
+          </a>
+        </div>
+        <!-- Gambar Ilustrasi Hero -->
+        <div class="md:w-1/2 flex justify-center md:justify-end">
+          <img
+            src="img/Background.png"
+            alt="Ilustrasi Pertanian Cerdas"
+            class="w-full max-w-md rounded-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- AgriInsight Product Section -->
+    <section id="agriinsight" class="py-16 md:py-24 bg-[#1a472a]">
+      <div
+        class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between"
+      >
+        <!-- Gambar Produk AgriInsight -->
+        <div class="md:w-1/2 flex justify-center md:justify-start mb-8 md:mb-0">
+          <img
+            src="img/1.png"
+            alt="AgriInsight App"
+            class="w-full max-w-sm rounded-lg shadow-xl"
+          />
+        </div>
+        <!-- Konten Teks AgriInsight -->
+        <div class="md:w-1/2 text-center md:text-left">
+          <h2
+            class="text-3xl md:text-5xl font-bold text-white leading-tight mb-4"
+          >
+            AgriInsight by AGRIGROTECH
+          </h2>
+          <p class="text-lg md:text-xl text-white mb-8">
+            Platform digital terintegrasi untuk memantau kondisi lahan dan
+            menerima rekomendasi AI, yang dirancang mudah digunakan oleh petani.
+          </p>
+          <a
+            href="#fitur-agriinsight"
+            class="inline-block border border-white text-white font-semibold py-3 px-8 rounded-full hover:bg-agriblue-accent hover:text-white transition duration-300"
+          >
+            Selengkapnya
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Tata Kelola Perusahaan Section (Adapted from image_60ae1c.png) -->
+    <section id="tata-kelola" class="py-16 md:py-24 bg-agriblue-light">
+      <div
+        class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between"
+      >
+        <!-- Gambar Ilustrasi Tata Kelola -->
+        <div class="md:w-1/2 flex justify-center md:justify-start mb-5 md:mb-0">
+          <div class="w-full max-w-md">
+            <img
+              src="img/Perusahaan.png"
+              alt="Corporate Governance Illustration"
+              class="w-full h-auto rounded-md"
+            />
+          </div>
+        </div>
+        <!-- Konten Teks Tata Kelola -->
+        <div class="md:w-1/2 text-center md:text-left">
+          <h2
+            class="text-3xl md:text-5xl font-bold text-agrigreen-dark leading-tight mb-4"
+          >
+            Tata Kelola Perusahaan
+          </h2>
+          <p class="text-lg md:text-xl text-gray-700 mb-8">
+            Bagi AGRIGROTECH, transparansi usaha, kualitas pelayanan, dan
+            kepercayaan petani/mitra adalah kunci atas keberlangsungan
+            perusahaan kami.
+          </p>
+          <a
+            href="#"
+            class="inline-block text-agrigreen-dark font-semibold hover:underline transition duration-300"
+          >
+            Selengkapnya &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rilis Media Section (Adapted from image_60adbf.png) -->
+    <section id="rilis-media" class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="flex justify-between items-center mb-10">
+          <h2 class="text-3xl md:text-4xl font-bold text-agrigreen-dark">
+            Artikel
+          </h2>
+          <div class="flex items-center space-x-4">
+            <!-- Navigasi panah (opsional, bisa diimplementasikan dengan JS untuk carousel) -->
+            <button
+              class="text-agrigreen-dark hover:text-agriblue-accent transition duration-300"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                ></path>
+              </svg>
+            </button>
+            <button
+              class="text-agrigreen-dark hover:text-agriblue-accent transition duration-300"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
+            </button>
+            <a
+              href="#"
+              class="text-agrigreen-dark font-medium hover:underline transition duration-300"
+            >
+              Lihat semua <i class="fas fa-chevron-down text-sm ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Grid Artikel Rilis Media -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Artikel 1 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+           <a href=""><img
+              src="img/Berita1.png"
+              alt="Berita 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <p class="text-sm text-gray-500 mb-2">
+                Press Release AGRIGROTECH
+              </p>
+              <h3 class="font-semibold text-lg text-agrigreen-dark mb-4">
+                AGRIGROTECH Meluncurkan Fitur Deteksi Hama Berbasis AI
+              </h3></a>
+              <a
+                href="#"
+                class="text-agriblue-accent font-semibold hover:underline transition duration-300"
+              >
+                Baca Artikel
+              </a>
+            </div>
+          </div>
+          <!-- Artikel 2 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <a href=""><img
+              src="img/Berita2.png"
+              alt="Berita 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <p class="text-sm text-gray-500 mb-2">
+                Press Release AGRIGROTECH
+              </p>
+              <h3 class="font-semibold text-lg text-agrigreen-dark mb-4">
+                Workshop Pertanian Cerdas di Desa Makmur Bersama AGRIGROTECH
+              </h3></a>
+              <a
+                href="#"
+                class="text-agriblue-accent font-semibold hover:underline transition duration-300"
+              >
+                Baca Artikel
+              </a>
+            </div>
+          </div>
+          <!-- Artikel 3 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <a href="#"><img
+              src="img/Berita3.png"
+              alt="Berita 3"
+              class="w-full h-48 object-cover "
+            />
+            <div class="p-6">
+              <p class="text-sm text-gray-500 mb-2">
+                Press Release AGRIGROTECH
+              </p>
+              <h3 class="font-semibold text-lg text-agrigreen-dark mb-4">
+                Kolaborasi AGRIGROTECH dan Koperasi Tani untuk Peningkatan Hasil
+                Panen
+              </h3></a>
+              <a
+                href="#"
+                class="text-agriblue-accent font-semibold hover:underline transition duration-300"
+              >
+                Baca Artikel
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section (Adapted from image_60ad65.png) -->
+    <footer class="bg-agrigreen-dark text-white py-12 px-6 md:px-12">
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center"
+      >
+        <!-- Logo dan Informasi Footer Kiri -->
+        <div class="flex flex-col items-center md:items-start mb-8 md:mb-0">
+          <img
+            src="img/AGRIGROTECH.png"
+            alt="AGRIGROTECH Logo"
+            class="h-10 w-auto mb-4 rounded-md"
+          />
+          <p class="text-sm text-center md:text-left">
+            AGRIGROTECH: Teknologi untuk Pertumbuhan Pertanian Berkelanjutan.
+          </p>
+        </div>
+
+        <!-- Navigasi Footer Tengah -->
+        <ul
+          class="flex flex-wrap justify-center md:justify-start space-x-6 md:space-x-8 mb-8 md:mb-0"
+        >
+          <li>
+            <a href="#profil" class="hover:underline transition duration-300"
+              >Profil</a
+            >
+          </li>
+          <li>
+            <a
+              href="#tata-kelola"
+              class="hover:underline transition duration-300"
+              >Tata Kelola</a
+            >
+          </li>
+          <li>
+            <a href="#kontak" class="hover:underline transition duration-300"
+              >Kontak</a
+            >
+          </li>
+        </ul>
+
+        <!-- Ikon Sosial Media Footer Kanan -->
+        <div class="flex space-x-6">
+          <a
+            href="#"
+            class="text-white hover:text-agriblue-accent transition duration-300 text-2xl"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="#"
+            class="text-white hover:text-agriblue-accent transition duration-300 text-2xl"
+          >
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a
+            href="#"
+            class="text-white hover:text-agriblue-accent transition duration-300 text-2xl"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            href="#"
+            class="text-white hover:text-agriblue-accent transition duration-300 text-2xl"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="#"
+            class="text-white hover:text-agriblue-accent transition duration-300 text-2xl"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bagian Bawah Footer (Informasi Tambahan) -->
+      <div
+        class="container mx-auto text-center text-sm mt-8 border-t border-gray-700 pt-8"
+      >
+        <p class="mb-2">
+         Inovasi Digital untuk Pertanian Berkelanjutan di Indonesia.
+        </p>
+        <p class="mt-4">&copy; 2025 PT.AGRIGROTECH. Hak Cipta Dilindungi.</p>
+      </div>
+    </footer>
+<!-- Chatbot Bubble -->
+<div id="chatbot-icon" class="fixed bottom-6 right-6 z-50 bg-agrigreen-dark text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg cursor-pointer">
+  💬
+</div>
+
+<!-- Chatbot Window -->
+<!-- Chatbot UI -->
+<div id="chatbot-container" class="fixed bottom-6 right-6 z-50">
+  <div id="chatbot-toggle" class="bg-agrigreen-dark text-white w-14 h-14 flex items-center justify-center rounded-full shadow cursor-pointer">
+    💬
+  </div>
+  <div id="chatbot-box" class="hidden mt-2 w-80 bg-white border border-gray-300 rounded-lg shadow-lg flex flex-col">
+    <div class="bg-agrigreen-dark text-white p-3 rounded-t-lg flex justify-between items-center">
+      <span>AGRIGROTECH Assistant</span>
+      <button id="chatbot-close" class="text-white text-lg">&times;</button>
+    </div>
+    <div id="chatbot-messages" class="p-3 h-64 overflow-y-auto text-sm space-y-2 text-gray-800 bg-gray-50"></div>
+    <div class="p-2 border-t">
+      <input id="chatbot-input" type="text" placeholder="Tanya tentang AGRIGROTECH..." class="w-full border px-3 py-2 rounded text-sm" />
+    </div>
+  </div>
+</div>
+
+
+    <!-- JavaScript untuk fungsionalitas mobile menu dan efek scroll navbar -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
